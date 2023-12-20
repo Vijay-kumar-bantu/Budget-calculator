@@ -6,13 +6,17 @@ A small web app where it stores the transactions and will calcluate the expenses
 
 totally build with react js and tried with vite this time.
 
-Hope you liked it.....
+Hope you liked it.....!
 
 ## Technologies used this project
 
 - React js Framework with javascript
 - Redux for state management
 - Material ui and icons
+
+## Screenshots
+
+![DEMO](image.png)
 
 ## Run Locally
 
