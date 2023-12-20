@@ -8,6 +8,28 @@ totally build with react js and tried with vite this time.
 
 Hope you liked it.....
 
-## Installation
+## Technologies used this project
 
-Install my-project with git clone
+- React js Framework with javascript
+- Redux for state management
+- Material ui and icons
+
+## Run Locally
+
+Clone the project
+
+```bash
+  git clone
+```
+
+Install dependencies
+
+```bash
+  npm install
+```
+
+Start the server
+
+```bash
+  npm run dev
+```
