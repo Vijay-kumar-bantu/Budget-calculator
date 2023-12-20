@@ -1,0 +1,145 @@
+@import url("https://fonts.googleapis.com/css2?family=Acme&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --text: hsl(232, 74%, 6%);
+  --background: white;
+  --primary: hsl(232, 82%, 39%);
+  --secondary: hsl(233, 77%, 83%);
+  --accent: hsl(232, 76%, 43%);
+}
+
+.app {
+  font-family: "Acme", sans-serif;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  background-color: var(--background);
+  color: var(--text);
+}
+
+/* indicator section */
+
+.indicator {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.balance,
+.expense {
+  color: white;
+  height: 15vh;
+  min-width: 15%;
+  padding: 10px;
+  display: grid;
+  place-items: center;
+  border-radius: 10px;
+}
+
+.balance h3,
+.expense h3 {
+  font-size: 1.3rem;
+}
+
+.balance h1,
+.expense h1 {
+  font-size: 2.2rem;
+}
+
+.balance {
+  background-color: #11b53a;
+}
+
+.expense {
+  background-color: #fa1a12;
+}
+
+/* transactions section */
+
+.transactions {
+  width: 60vw;
+  margin: auto;
+  flex-grow: 2;
+  font-size: 0.6rem;
+  font-family: sans-serif;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  overflow-y: scroll;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+.transaction {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  background-color: lightblue;
+}
+
+.treasury {
+  background-color: #11b53a;
+}
+
+.expenses {
+  background-color: #fa1a12;
+}
+/* inputBar section */
+
+.inputBar {
+  width: 100%;
+  min-height: 8%;
+  padding: 10px;
+  background-color: lightgray;
+}
+
+.inputBar form {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  gap: 20px;
+}
+
+.inputSection {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-width: 20%;
+}
+.inputSection:first-child {
+  width: 60%;
+}
+
+.inputSection input,
+select {
+  width: 100%;
+  padding: 10px;
+  font-family: inherit;
+}
+
+.inputSection p {
+  font-size: 10px;
+  color: red;
+  z-index: 3;
+}
+
+.submitButton {
+  padding: 10px;
+  background-color: rgba(8, 8, 241, 0.5);
+  color: white;
+  font-family: inherit;
+  font-size: 18px;
+  width: 10%;
+  border: none;
+  border-radius: 10px;
+}
